@@ -1,7 +1,7 @@
 # make-lambda-aws-cli-v2
 Using aws cli to make a lambda function
 
-
+### All the command line commands     
 <img width="682" alt="nano trust-policy.json" src="https://user-images.githubusercontent.com/38410965/96945870-e131cd80-14ac-11eb-9a42-7d5aeb5c2b37.png">
 
 
