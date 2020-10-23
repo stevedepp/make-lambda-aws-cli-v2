@@ -35,6 +35,6 @@ All the command line commands:
      - `nano payload.json`
 <img width="682" alt="lambda-ex8" src="https://user-images.githubusercontent.com/38410965/96945960-13432f80-14ad-11eb-8ff4-9d9bcb216a9d.png">
 
-- [x] step 06 (alternate): if you prefer to, you can change settings in configure file to avoid converting payload to binary.
+- [x] step 06 (alternate): if you prefer to, you can edit settings in your .aws/config file to avoid converting payload to binary.
      - `cd ~/.aws/config`
 <img width="682" alt="lambda-ex7" src="https://user-images.githubusercontent.com/38410965/96945943-0de5e500-14ad-11eb-8e96-618d667cc53c.png">
