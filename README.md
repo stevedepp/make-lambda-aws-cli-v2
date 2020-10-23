@@ -30,11 +30,22 @@ All the command line commands:
      - `--role is the arn obtained in step 5`
 <img width="682" alt="lambda-ex6" src="https://user-images.githubusercontent.com/38410965/96945935-08889a80-14ad-11eb-9214-f5fde902a38d.png">
 
-- [x] step 06: author a payload and convert to base 64 because aws cli v2 only takes binary payloads:
+- [x] step 06: author a payload and convert to base 64 because aws cli v2 only takes binary payloads.
      - `touch payload.json`
      - `nano payload.json`
+     - `cat payload.json > json_payload`
+     - `openssl base64 -out encoded_payload -in json_payload`
 <img width="682" alt="lambda-ex8" src="https://user-images.githubusercontent.com/38410965/96945960-13432f80-14ad-11eb-8ff4-9d9bcb216a9d.png">
 
 - [x] step 06 (alternate): if you prefer to, you can edit settings in your .aws/config file to avoid converting payload to binary.
      - `cd ~/.aws/config`
 <img width="682" alt="lambda-ex7" src="https://user-images.githubusercontent.com/38410965/96945943-0de5e500-14ad-11eb-8e96-618d667cc53c.png">
+
+- [x] step 07: invoke lambda and see the response.
+     - `aws lambda invoke --function-name my-function --invocation-type RequestResponse --payload file://encoded_payload response.json --log-type Tail --query 'LogResult' --output text |  base64 -d`
+     - `cat response.json`
+     
+- [x] step 08: don't overpay.
+     - `aws iam detach-role-policy --role-name lambda-ex --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole1`
+     - `aws iam delete-role --role-name lambda-ex`
+     - `aws lambda delete-function --function-name my-function`
