@@ -1,7 +1,6 @@
-# make-lambda-aws-cli-v2
 ### Using aws cli to make a lambda function
 
-All the command line commands     
+All the command line commands:     
 <img width="682" alt="nano trust-policy.json" src="https://user-images.githubusercontent.com/38410965/96945870-e131cd80-14ac-11eb-9a42-7d5aeb5c2b37.png">
 
 - [x] step 01: create policy:
@@ -9,7 +8,7 @@ All the command line commands
      - [x] `nano trust-policy.json`
 <img width="682" alt="aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json" src="https://user-images.githubusercontent.com/38410965/96945884-eb53cc00-14ac-11eb-9e5b-a7d6943de11f.png">
 - [x] step 02: create role:
-     - [x] `aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json`
+          - [x] `aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json`
 <img width="682" alt="lambda-ex3" src="https://user-images.githubusercontent.com/38410965/96945890-f0b11680-14ac-11eb-9001-56c3f6d77161.png">
 
      - [x] `cirepolib` folder
