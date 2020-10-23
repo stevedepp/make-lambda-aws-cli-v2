@@ -8,17 +8,16 @@ All the command line commands:
      - `nano trust-policy.json`
 <img width="682" alt="aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json" src="https://user-images.githubusercontent.com/38410965/96945884-eb53cc00-14ac-11eb-9e5b-a7d6943de11f.png">
 
-- [x] step 01: create policy:
 - [x] step 02: create role:
      - `aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json`
 <img width="682" alt="lambda-ex3" src="https://user-images.githubusercontent.com/38410965/96945890-f0b11680-14ac-11eb-9001-56c3f6d77161.png">
 - [x] step 03: attach policy to role:
      - `aws iam attach-role-policy --role-name lambda-ex --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole`
-<img width="682" alt="lambda-ex4" src="https://user-images.githubusercontent.com/38410965/96945902-f575ca80-14ac-11eb-9290-e8734ff5873f.png">
 - [x] step 04: author the lamnda_function in python and zip it up:
      - `touch lambda_function.py`
      - `nano lambda_function.py`
      - `zip function.zip lambda_function.py`
+<img width="682" alt="lambda-ex4" src="https://user-images.githubusercontent.com/38410965/96945902-f575ca80-14ac-11eb-9290-e8734ff5873f.png">
 <img width="682" alt="lambda-ex5" src="https://user-images.githubusercontent.com/38410965/96945924-feff3280-14ac-11eb-9a8b-c23d6950afc1.png">
 - [x] step 05: obtaining my user arn for the next step:
      - `aws iam get-user`
