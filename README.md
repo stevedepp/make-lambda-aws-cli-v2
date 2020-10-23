@@ -45,7 +45,8 @@ All the command line commands:
      - `aws lambda invoke --function-name my-function --invocation-type RequestResponse --payload file://encoded_payload response.json --log-type Tail --query 'LogResult' --output text |  base64 -d`
      - `cat response.json`
 
-<img width="682" alt="Pasted Graphic 21" src="https://user-images.githubusercontent.com/38410965/96948789-6c629180-14b4-11eb-8a5a-62c624717888.png">
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/38410965/96949023-f6aaf580-14b4-11eb-8d7a-a991c46c698f.png">
+
 <img width="682" alt="hello from steve depp, {statusCode 200," src="https://user-images.githubusercontent.com/38410965/96948776-68367400-14b4-11eb-86b4-c0f4678978e3.png">
 
 - [x] step 08: don't overpay.
