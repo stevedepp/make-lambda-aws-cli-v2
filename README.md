@@ -11,6 +11,7 @@ All the command line commands:
 - [x] step 02: create role:
      - `aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json`
 <img width="682" alt="lambda-ex3" src="https://user-images.githubusercontent.com/38410965/96945890-f0b11680-14ac-11eb-9001-56c3f6d77161.png">
+
 - [x] step 03: attach policy to role:
      - `aws iam attach-role-policy --role-name lambda-ex --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole`
 - [x] step 04: author the lamnda_function in python and zip it up:
