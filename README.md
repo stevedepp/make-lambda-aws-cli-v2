@@ -23,8 +23,8 @@ All the command line commands:
 <img width="682" alt="lambda-ex6" src="https://user-images.githubusercontent.com/38410965/96945935-08889a80-14ad-11eb-9214-f5fde902a38d.png">
 - [x] step 06: create the lambda function:
      - `aws lambda create-function --function-name my-function --zip-file fileb://function.zip --handler lambda_function.lambda_handler --runtime python3.8 --role arn:aws:iam::606363841935:role/lambda-ex`
-            - [x] `--handler is the python module name without .py suffix concatenated to the defined function's name inside 'lambda_function.lambda_handler'`
-            - [x] `--role is the arn obtained in step 5`
+            - `--handler is the python module name without .py suffix concatenated to the defined function's name inside 'lambda_function.lambda_handler'`
+            - `--role is the arn obtained in step 5`
 <img width="682" alt="lambda-ex7" src="https://user-images.githubusercontent.com/38410965/96945943-0de5e500-14ad-11eb-8e96-618d667cc53c.png">
 
 
