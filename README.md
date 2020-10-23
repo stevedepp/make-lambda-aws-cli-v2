@@ -7,6 +7,7 @@ All the command line commands:
      - `touch trust-policy.json`
      - `nano trust-policy.json`
 <img width="682" alt="aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json" src="https://user-images.githubusercontent.com/38410965/96945884-eb53cc00-14ac-11eb-9e5b-a7d6943de11f.png">
+
 - [x] step 01: create policy:
 - [x] step 02: create role:
      - `aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json`
